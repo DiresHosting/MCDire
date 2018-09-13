@@ -48,7 +48,7 @@ namespace MCGalaxy.Commands.Moderation {
 
             JsonContext ctx = new JsonContext();
             using (WebClient client = HttpUtil.CreateWebClient()) {
-                ctx.Val = client.DownloadString("http://ipinfo.io/" + ip + "/geo");
+                ctx.Val = client.DownloadString(https://geoip.pw/" + ip);
             }
             
             JsonObject obj = (JsonObject)Json.ParseStream(ctx);
